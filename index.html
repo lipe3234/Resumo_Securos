@@ -1,0 +1,111 @@
+<head>
+  <title>Resumo "Administration guide"</title>
+</head>
+
+<style>
+  
+</style>
+
+<body>
+  <h1>Função principal</h1> <p></p>
+
+  <h2>
+    O subsistema principal é responsável por:
+
+Centralizar a administração do sistema
+
+Gerenciar câmeras, usuários, eventos, licenças
+
+Integrar com outros sistemas via módulos e APIs
+    
+Processar e distribuir dados em tempo real para os demais componentes
+  </h2>
+
+<h1>
+  Componentes e Funções-Chave
+</h1>
+
+<h2>
+  Servidor Principal
+
+Roda o núcleo do SecurOS
+
+Armazena a configuração central
+
+Envia atualizações para os clientes (SecurOS Client)
+
+Gerenciamento de Câmeras
+
+Adição e configuração de câmeras IP/analógicas
+
+Parâmetros: resolução, fps, compressão, movimento
+
+Gerenciamento de Armazenamento
+
+Define onde os vídeos são salvos
+
+Suporta múltiplos discos e volumes
+
+Possui regras de retenção por tempo, evento, prioridade
+
+Controle de Acesso e Permissões
+
+Criação de perfis de usuários
+
+Controle granular por função, câmera ou operação
+
+Gerenciador de Eventos
+
+Sistema baseado em regras (se isso acontecer, faça aquilo)
+
+Pode acionar alertas, gravação, scripts, envio de e-mails
+
+Logs e Auditoria
+
+Registro de tudo que acontece no sistema
+
+Permite rastrear ações de usuários e falhas
+</h2>
+
+<h1>
+  Comandos e Ferramentas Destacadas
+</h1>
+
+<h2>
+  Configuração de câmeras:
+
+Através do SecurOS Configurator
+
+Interface gráfica, sem comandos CLI nesse ponto
+
+Configuração de armazenamento:
+
+Definição de diretórios, tempo de retenção
+
+Exemplo: vídeos de alarme podem ter prioridade maior
+
+Criação de eventos e regras:
+
+Interface lógica tipo "if-then"
+
+Exemplo: "Se movimento for detectado em Câmera 5, gravar por 30 segundos e enviar e-mail"
+
+
+</h2>
+
+
+<h1>
+  Comunicação com Outros Subsistemas
+</h1>
+
+<h2>
+  Cliente SecurOS: recebe vídeo, eventos e comandos
+
+Módulos adicionais: como LPR (reconhecimento de placa), análise de vídeo, integração com controle de acesso
+
+SecurOS MCC: para integração de múltiplas instalações distribuídas
+</h2>
+
+
+  
+</body>
